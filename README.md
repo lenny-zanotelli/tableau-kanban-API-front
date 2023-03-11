@@ -6,6 +6,11 @@ Projet de fin de module regroupant les connaissances acquises en gestion de BDD 
 
 *API(fetch, CRUD), découverte module Sortable.js(drag&drop), découverte du bundler Browserify, découverte du middleware multer et la manipulation du shadowDOM avec les templates HTML.*
 
+### TO DO
+
+Cette application n'est pas encore déployé
+
+
 ## API Endpoints
 
 ### Listes
