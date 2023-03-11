@@ -1,4 +1,10 @@
-# oKanban backend
+# Tableau Kanban 
+
+## Description
+
+Projet de fin de module regroupant les connaissances acquises en gestion de BDD et d'une API puis l'utilisation de cette API sur un front basique. 
+
+**API(fetch, CRUD), découverte module Sortable.js(drag&drop), découverte du bundler Browserify, découverte du middleware multer et la manipulation du shadowDOM avec les templates HTML.
 
 ## API Endpoints
 
