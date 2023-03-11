@@ -47,7 +47,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:reset": "psql -U okanban -d okanban -f ./data/create_db.sql"
+    "db:reset": "psql -U okanban -d okanban -f ./data/create_db.sql",
+    "build": "browserify -e src/app.js -o assets/js/bundle.min.js -p tinyify"
   },
   "repository": {
     "type": "git",

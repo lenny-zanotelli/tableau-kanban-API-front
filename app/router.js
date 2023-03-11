@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 /* -------------- Controllers -------------- */
 
@@ -11,7 +12,8 @@ const tagController = require('./controllers/tagController');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send('hello');
+  let filePath = path.join(__dirname, "../assets/index.html")
+  res.sendFile(filePath);
 });
 
 /** Lists */

@@ -25,7 +25,7 @@ app.use(bodyParser.none());
 app.use(middlewares.bodySanitizer);
 app.use(router);
 
-
+app.use(express.static('assets'));
 app.use(middlewares.notFoundMiddleware);
 
 /* ---------- App ---------- */
