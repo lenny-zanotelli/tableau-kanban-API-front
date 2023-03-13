@@ -63,8 +63,11 @@ VALUES ('Carte 1', '#fff696', 1),
        ('2ème carte', '#c1e7ff', 1);
 
 INSERT INTO "tag" ("name", "color")
-VALUES ('Urgent', '#F00');
-
+VALUES ('Urgent', '#ce7e00'),
+       ('Important', '#A4CB80'),
+       ('Medium','#b4a7d6'),
+       ('Low', '#ffd966');
+       
 -- et on oublie pas la table de liaison !
 INSERT INTO "card_has_tag" ("card_id", "tag_id")
 VALUES (1,1);

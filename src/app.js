@@ -3,8 +3,6 @@ const utilModule = require('./utils');
 const cardModule = require('./cards');
 const tagModule = require('./tags');
 
-
-
 const app = {
 
   // fonction d'initialisation, lancée au chargement de la page

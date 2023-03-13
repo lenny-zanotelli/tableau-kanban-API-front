@@ -157,3 +157,5 @@ const cardModule = {
       });
     }
 }
+
+module.exports = cardModule;
