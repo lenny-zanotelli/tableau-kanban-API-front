@@ -111,10 +111,7 @@ const tagController = {
         return res.status(404).json('Can not find tag with id ' + tagId);
       }
 
-      // on laisse faire la magie de Sequelize !
       await card.addTag(tag);
-      // malheureusement, les associations de l'instance ne sont pas mises à jour
-      // on doit donc refaire un select
       card = await Card.findByPk(cardId, {
         include: ['tags']
       });

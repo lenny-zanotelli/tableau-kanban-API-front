@@ -1,9 +1,0 @@
-:
-carte: code carte, titre, couleur, position
-appartient, 11 carte, 0N liste
-liste: code liste, nom, position
-
-tag: code tag, nom, couleur
-possède, 0N tag, 0N carte
-:
-:
