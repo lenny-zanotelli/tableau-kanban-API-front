@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="393" height="229" viewBox="0 0 393 229" xmlns="http://www.w3.org/2000/svg">
+<rect id="frame" x="0" y="0" width="393" height="229" fill="#f7f7f7" stroke="none" stroke-width="0"/>
+
+<!-- Association appartient -->
+<g class="page_0_13djsWUS diagram_page" visibility="visible">
+	<line x1="137" y1="60" x2="245" y2="60" stroke="#de77ae" stroke-width="2"/>
+	<text x="179" y="77" fill="#4d9221" font-family="Verdana" font-size="12">1,1</text>
+	<line x1="350" y1="60" x2="245" y2="60" stroke="#de77ae" stroke-width="2"/>
+	<text x="289" y="77" fill="#4d9221" font-family="Verdana" font-size="12">0,N</text>
+	<g>
+		<path d="M270 35 a14 14 90 0 1 14 14 V60 h-78 V49 a14 14 90 0 1 14 -14" fill="#f1b6da" stroke="#f1b6da" stroke-width="0"/>
+		<path d="M284 60 v11 a14 14 90 0 1 -14 14 H220 a14 14 90 0 1 -14 -14 V60 H78" fill="#fde0ef" stroke="#fde0ef" stroke-width="0"/>
+		<rect x="206" y="35" width="78" height="50" fill="none" rx="14" stroke="#de77ae" stroke-width="2"/>
+		<line x1="206" y1="60" x2="284" y2="60" stroke="#de77ae" stroke-width="1"/>
+		<text x="214" y="52.75" fill="#000" font-family="Verdana" font-size="12">appartient</text>
+	</g>
+</g>
+
+<!-- Association possède -->
+<g class="page_0_13djsWUS diagram_page" visibility="visible">
+	<line x1="41" y1="178" x2="137" y2="178" stroke="#de77ae" stroke-width="2"/>
+	<text x="78" y="195" fill="#4d9221" font-family="Verdana" font-size="12">0,N</text>
+	<line x1="137" y1="60" x2="137" y2="178" stroke="#de77ae" stroke-width="2"/>
+	<text x="142" y="128" fill="#4d9221" font-family="Verdana" font-size="12">0,N</text>
+	<g>
+		<path d="M155 153 a14 14 90 0 1 14 14 V178 h-64 V167 a14 14 90 0 1 14 -14" fill="#f1b6da" stroke="#f1b6da" stroke-width="0"/>
+		<path d="M169 178 v11 a14 14 90 0 1 -14 14 H119 a14 14 90 0 1 -14 -14 V178 H64" fill="#fde0ef" stroke="#fde0ef" stroke-width="0"/>
+		<rect x="105" y="153" width="64" height="50" fill="none" rx="14" stroke="#de77ae" stroke-width="2"/>
+		<line x1="105" y1="178" x2="169" y2="178" stroke="#de77ae" stroke-width="1"/>
+		<text x="112" y="170.75" fill="#000" font-family="Verdana" font-size="12">possède</text>
+	</g>
+</g>
+
+<!-- Entity carte -->
+<g class="page_0_13djsWUS diagram_page" visibility="visible">
+	<g>
+		<rect x="100" y="9" width="74" height="25" fill="#b8e186" stroke="#b8e186" stroke-width="0" opacity="1"/>
+		<rect x="100" y="34" width="74" height="77" fill="#e6f5d0" stroke="#e6f5d0" stroke-width="0" opacity="1"/>
+		<rect x="100" y="9" width="74" height="102" fill="none" stroke="#7fbc41" stroke-width="2" opacity="1"/>
+		<line x1="100" y1="34" x2="174" y2="34" stroke="#7fbc41" stroke-width="1"/>
+	</g>
+	<text x="122" y="26.75" fill="#000" font-family="Verdana" font-size="12">carte</text>
+	<text x="105" y="51.8" fill="#000" font-family="Verdana" font-size="12">code carte</text>
+	<line x1="105" y1="54" x2="169" y2="54" stroke="#000" stroke-width="1"/>
+	<text x="105" y="68.8" fill="#000" font-family="Verdana" font-size="12">titre</text>
+	<text x="105" y="85.8" fill="#000" font-family="Verdana" font-size="12">couleur</text>
+	<text x="105" y="102.8" fill="#000" font-family="Verdana" font-size="12">position</text>
+</g>
+
+<!-- Entity liste -->
+<g class="page_0_13djsWUS diagram_page" visibility="visible">
+	<g>
+		<rect x="316" y="18" width="68" height="25" fill="#b8e186" stroke="#b8e186" stroke-width="0" opacity="1"/>
+		<rect x="316" y="43" width="68" height="59" fill="#e6f5d0" stroke="#e6f5d0" stroke-width="0" opacity="1"/>
+		<rect x="316" y="18" width="68" height="84" fill="none" stroke="#7fbc41" stroke-width="2" opacity="1"/>
+		<line x1="316" y1="43" x2="384" y2="43" stroke="#7fbc41" stroke-width="1"/>
+	</g>
+	<text x="337" y="35.75" fill="#000" font-family="Verdana" font-size="12">liste</text>
+	<text x="321" y="60.8" fill="#000" font-family="Verdana" font-size="12">code liste</text>
+	<line x1="321" y1="63" x2="379" y2="63" stroke="#000" stroke-width="1"/>
+	<text x="321" y="77.8" fill="#000" font-family="Verdana" font-size="12">nom</text>
+	<text x="321" y="94.8" fill="#000" font-family="Verdana" font-size="12">position</text>
+</g>
+
+<!-- Entity tag -->
+<g class="page_0_13djsWUS diagram_page" visibility="visible">
+	<g>
+		<rect x="9" y="136" width="64" height="25" fill="#b8e186" stroke="#b8e186" stroke-width="0" opacity="1"/>
+		<rect x="9" y="161" width="64" height="59" fill="#e6f5d0" stroke="#e6f5d0" stroke-width="0" opacity="1"/>
+		<rect x="9" y="136" width="64" height="84" fill="none" stroke="#7fbc41" stroke-width="2" opacity="1"/>
+		<line x1="9" y1="161" x2="73" y2="161" stroke="#7fbc41" stroke-width="1"/>
+	</g>
+	<text x="31" y="153.75" fill="#000" font-family="Verdana" font-size="12">tag</text>
+	<text x="14" y="178.8" fill="#000" font-family="Verdana" font-size="12">code tag</text>
+	<line x1="14" y1="181" x2="67" y2="181" stroke="#000" stroke-width="1"/>
+	<text x="14" y="195.8" fill="#000" font-family="Verdana" font-size="12">nom</text>
+	<text x="14" y="212.8" fill="#000" font-family="Verdana" font-size="12">couleur</text>
+</g>
+</svg>
