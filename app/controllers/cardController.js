@@ -4,7 +4,18 @@ const cardController = {
   getCardsInList: async (req, res) => {
     try {
       const listId = req.params.id;
-
+      /*Une autre façon de récupérer une liste avec ses cards
+      const cards = await List.findByPk(listId, {
+        include: {
+          association: 'cards',               
+          include: 'tags'                     
+        },
+        order: [                              
+          ['position', 'ASC'],                
+          ['cards', 'position', 'ASC']       
+        ]
+      });
+      */
       const cards = await Card.findAll( // On cherche toutes les cards
         {
           where: { // toutes les cards qui possèdent un list_id = params.id
@@ -62,7 +73,7 @@ const cardController = {
       if (bodyErrors.length) {
         res.status(400).json(bodyErrors);
       } else {
-        let newCard = Card.build({ title, list_id }); 
+        let newCard = Card.build({ title, list_id }); // On utilise .build() pour créer une instance avec les valeurs obligatoires
         if (color) { // On test les valeurs optionnelles, et on les ajoute si besoin à notre instance
           newCard.color = color;
         }

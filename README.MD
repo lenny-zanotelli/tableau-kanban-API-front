@@ -1,11 +1,14 @@
-# Kanban API and Front
+# Kanban API with Postgres DB
 
 ## Table of Contents
-- [Kanban API and Front](#kanban-api-and-front)
+- [Kanban API with Postgres DB](#kanban-api-with-postgres-db)
   - [Table of Contents](#table-of-contents)
-  - [About](#about)
+  - [General Information](#general-information)
   - [Technologies Used](#technologies-used)
-  - [Description of features](#description-of-features)
+  - [Screenshots](#screenshots)
+    - [Page List](#page-list)
+    - [Types Page](#types-page)
+    - [Search Bar \& Search Results](#search-bar--search-results)
   - [Setup](#setup)
   - [Usage](#usage)
   - [Project Status](#project-status)
@@ -15,38 +18,32 @@
 
 
 
-## About
-  This is a training project allowing an user to organize his activities alone or in a team. Classic Kanban.
-  This project highlights my ability to set up a REST API (CRUD) and exploiting this API from the front.
-  The visual is "minimalist" powered by BulmaCSS.
+## General Information
+  This is a training project where we were able to first learn how to create a complete CRUD API. 
+  Then we created a minimalist visual. 
+  Finally we combined the two projects to create a full-stack application.
 
 
 ## Technologies Used
+- Bulma CSS - version 0.7.2
+- SortableJS - version 1.15
+- Postgres - version 12
+- Node JS - version 16
+- Express - version 4.18.2
+- Sequelize - version 6.28
 
-- *Front-end*
-  
-  - HTML5 / CSS3 / JavaScript
-  - Bulma CSS - version 0.7.2
-  - SortableJS - version 1.15
+## Screenshots
 
-- *Back-end*
-  
-  - Postgres - version 12
-  - Node JS - version 16
-  - Express - version 4.18.2
-  - Sequelize - version 6.28
+### Page List
+![Page List](./screenshot/liste_page.png)
 
-## Description of features
+### Types Page
+![Types Page](./screenshot/types_page.png)
 
-The main intention of this project is to implement the classic features of a simple Kanban such as :
-  - Creation of a new List, New Cards and New Labels
-  - A card can be assigned to a list and a label can be assigned to a card
+### Search Bar & Search Results
+![Search Bar](./screenshot/search_bar.png)
+![Search Results](./screenshot/search_results.png)
 
-The user is free to organize his Kanban according to his wishes by modifying the position of the list or the position of a card in a list with Drag&Drop. Very smooth and useful.
-
-The user can also choose to rename a list, a card or a label. He can also change the background's color of the card by clicking on the buttons provided. Only lists and labels can be renamed by double clicking on their name.
-
-Moreover, the user can finally choose to delete a list, a card or a label as well as the associated data. So be careful.
 
 ## Setup
 Clone this repo to your desktop and run `npm install` to install all the dependencies.
@@ -59,7 +56,7 @@ After you clone this repo to your desktop, go to its root directory and run `npm
 Once the dependencies are installed and Database configure, you can run  `npm run dev` to start the application. You will then be able to access it at localhost:3000
 
 ## Project Status
-Project is: _finish_
+Project is: _in progress_
 
 ## Room for Improvement
 

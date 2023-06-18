@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+const url = "https://geo.api.gouv.fr/regions";
+
+
+// Sans traitement en json
+
+function testFetchRaw(url){
+    fetch(url)
+        .then((response) => console.log(response)) 
+}
+
+testFetchRaw(url);
+
+// En mode .then
+
+function testFetch(url){
+    fetch(url)
+        .then((response) => response.json()) // Permet d'extraire les données json contenues dans response.body
+        .then((jsonData) => console.log(jsonData)) // Une fois traitées, on affiche ces données dans la console
+        .catch((error) => console.log(error))
+        .finally(() => console.log("La fonction est terminée !"))
+}
+
+// En mode async/await
+
+async function testFetchAsync(url) {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    } finally {
+        console.log("finally du try catch");
+    }
+}
+
+//testFetch(url);
+
+</script>
+</html>

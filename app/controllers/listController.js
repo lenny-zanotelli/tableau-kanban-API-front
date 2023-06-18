@@ -51,15 +51,26 @@ const listController = {
       if (!name) {                                // Si le name est absent de la requete
         bodyErrors.push('name can not be empty'); // On glisse l'erreur dans l'array bodyErrors
       }
+                                                  // Si il y avait d'autres valeurs à tester, on pourrait glisser les erreurs dans bodyErrors
+                                                  // Cela permet de lister les différentes erreurs et de renvoyer le tout vers le frontend
 
       if (bodyErrors.length) {                    // Si une (ou plusieurs) erreur est détectée
         res.status(400).json(bodyErrors);         // On envoie la liste d'erreurs avec le code 400 : Requête incorrecte
       } else {                                    // Sinon, s'il n'y a pas d'erreurs
-        let newList = List.build({                
+        let newList = List.build({                // On créé une instance de la liste avec .build() (cf : https://sequelize.org/docs/v6/core-concepts/model-instances/#creating-an-instance)
           name,
           position
         });
 
+        // List.build() équivaut à new List({name, position})
+        // Selon Sequelize, on ne doit PAS utiliser new Class, puisqu'on perdrait l'héritage du Model
+
+        /*Exemple d'utilisation de active record
+        
+        newList.hostip = "10.10.10.10"
+        newList.role = "admin"
+        ...
+        */
         await newList.save();                     // On enregistre l'instance créée dans la db
         res.status(200).json(newList);            // On répond avec la liste créée  
       }
@@ -79,8 +90,9 @@ const listController = {
       } else {                                            // Sinon, si la liste existe
 
         const { name, position } = req.body;              // On récupère les nouvelles infos dans le body
-        if (name) {                                       
-          list.name = name;                              
+                                                          // On ne change que les paramètres présents
+        if (name) {                                       // Si name est présent dans le body
+          list.name = name;                               // On change le name de l'objet instancié "list" (récupéré à la ligne 77)
         }
 
         if (position) {                                   // Si position est présent dans le body
